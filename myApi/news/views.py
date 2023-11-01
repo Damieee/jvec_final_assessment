@@ -1,6 +1,7 @@
 
 from django.shortcuts import render
 from .models import NewsItem
+from celery import shared_task
 import requests
 
 from django.views.generic import ListView
